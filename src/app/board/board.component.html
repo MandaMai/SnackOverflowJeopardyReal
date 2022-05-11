@@ -1,0 +1,122 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <ng-template #mymodal let-modal class="questionModal">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{ title }}</h4>
+    <button (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{ questionText }}
+  </div>
+  <div class="modal-body-points">
+    Your Real Points For This Question: {{ realPoints }} !
+  </div>
+  <div class="modal-body-answer">
+      The Correct Answer: {{ questionAnswer }}
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark btnOk" (click)="modal.close('Save click')">Done</button>
+  </div>
+</ng-template>
+</div>
+
+<table class="table table-borderless table-dark">
+    <thead>
+      <tr>
+        <th class="category">Shark Bait</th>
+        <th class="category">Woof!</th>
+        <th class="category">Meowsers</th>
+        <th class="category">Superstitions</th>
+        <th class="category">UI (Words)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <button id = "1" class="btn btn-outline-light question clr1" (click)="open(mymodal, 1);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "6" class="btn btn-outline-light question clr6" (click)="open(mymodal, 6);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "11" class="btn btn-outline-light question clr11" (click)="open(mymodal, 11);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "16" class="btn btn-outline-light question clr16" (click)="open(mymodal, 16);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "21" class="btn btn-outline-light question clr21" (click)="open(mymodal, 21);">{{ questionLabel }}</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button id = "2" class="btn btn-outline-light question clr2" (click)="open(mymodal, 2);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "7" class="btn btn-outline-light question clr7" (click)="open(mymodal, 7);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "12" class="btn btn-outline-light question clr12" (click)="open(mymodal, 12);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "17" class="btn btn-outline-light question clr17" (click)="open(mymodal, 17);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "22" class="btn btn-outline-light question clr22" (click)="open(mymodal, 22);">{{ questionLabel }}</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button id = "3" class="btn btn-outline-light question clr3" (click)="open(mymodal, 3);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "8" class="btn btn-outline-light question clr8" (click)="open(mymodal, 8);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "13" class="btn btn-outline-light question clr13" (click)="open(mymodal, 13);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "18" class="btn btn-outline-light question clr18" (click)="open(mymodal, 18);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "23" class="btn btn-outline-light question clr23" (click)="open(mymodal, 23);">{{ questionLabel }}</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button id = "4" class="btn btn-outline-light question clr4" (click)="open(mymodal, 4);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "9" class="btn btn-outline-light question clr9" (click)="open(mymodal, 9);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "14" class="btn btn-outline-light question clr14" (click)="open(mymodal, 14);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "19" class="btn btn-outline-light question clr19" (click)="open(mymodal, 19);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "24" class="btn btn-outline-light question clr24" (click)="open(mymodal, 24);">{{ questionLabel }}</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button id = "5" class="btn btn-outline-light question clr5" (click)="open(mymodal, 5);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "10" class="btn btn-outline-light question clr10" (click)="open(mymodal, 10);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "15" class="btn btn-outline-light question clr15" (click)="open(mymodal, 15);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "20" class="btn btn-outline-light question clr20" (click)="open(mymodal, 20);">{{ questionLabel }}</button>
+        </td>
+        <td>
+            <button id = "25" class="btn btn-outline-light question clr25" (click)="open(mymodal, 25);">{{ questionLabel }}</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
